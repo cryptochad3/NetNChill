@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-900;
+  }
+}
+
+@layer components {
+  /* Custom scrollbar styles */
+  .overflow-y-auto {
+    scrollbar-width: thin;
+    scrollbar-color: #CBD5E1 transparent;
+  }
+
+  .overflow-y-auto::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .overflow-y-auto::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .overflow-y-auto::-webkit-scrollbar-thumb {
+    background-color: #CBD5E1;
+    border-radius: 3px;
+  }
+}
